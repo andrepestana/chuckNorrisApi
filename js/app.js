@@ -163,7 +163,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  data: function data() {\n    return {\n      joke: \"\"\n    };\n  },\n  methods: {\n    loadJoke: function loadJoke() {\n      var _this = this;\n\n      this.$http.get(\"http://api.icndb.com/jokes/random\").then(function (result) {\n        _this.joke = result.body.value.joke;\n      }, function (error) {\n        console.log(error);\n      });\n    }\n  },\n  mounted: function mounted() {\n    this.loadJoke();\n  }\n});\n\n//# sourceURL=webpack:///./src/App.vue?./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  data: function data() {\n    return {\n      joke: \"\"\n    };\n  },\n  methods: {\n    loadJoke: function loadJoke() {\n      var _this = this;\n\n      this.$http.get(\"https://api.icndb.com/jokes/random\").then(function (result) {\n        _this.joke = result.body.value.joke;\n      }, function (error) {\n        console.log(error);\n      });\n    }\n  },\n  mounted: function mounted() {\n    this.loadJoke();\n  }\n});\n\n//# sourceURL=webpack:///./src/App.vue?./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -256,7 +256,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"img/chucknorris.d459ae2a.jpg\";\n\n//# sourceURL=webpack:///./src/assets/chucknorris.jpg?");
+eval("module.exports = __webpack_require__.p + \"chuckNorrisApi/img/chucknorris.d459ae2a.jpg\";\n\n//# sourceURL=webpack:///./src/assets/chucknorris.jpg?");
 
 /***/ }),
 
